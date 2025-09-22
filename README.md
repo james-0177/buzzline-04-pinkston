@@ -290,3 +290,41 @@ Live Bar Chart (Kafka JSON streaming)
 Live Line Chart with Alert (Kafka CSV streaming)
 
 ![CSV (Kafka)](images/live_line_chart_example.jpg)
+
+## Task 6: Create custom consumers file draft
+
+Create draft version of custom consumers file, project_consumer_pinkston.py
+
+```shell
+git add .
+git commit -m "created custom csv consumers file, project_consumer_pinkston.py"
+git push -u origin main
+```
+
+## Task 7: Rename custom consumers file
+
+Renamed project_consumer_pinkston.py to project_consumer_pinkston_draft.py
+
+```shell
+git add .
+git commit -m "renamed custom csv consumers file, project_consumer_pinkston_draft.py"
+git push -u origin main
+```
+
+## Task 8: Created new final custom consumers file and modified the chart, and added analytics
+
+Created project_consumer_pinkston.py as final new custom consumers file. Changed the line chart to a bar chart, added a boolean check for a high temperature threshold of 90°F, modified the bar chart to show a different color for high temperatures, and created a periodic analytics report to show high temperatures and average high temperatures so far.
+
+```shell
+git add .
+git commit -m "modified custom consumers file, project_consumer_pinkston.py"
+git push -u origin main
+```
+
+## Task 9: Make final update to README
+
+```shell
+git add .
+git commit -m "made final update to README"
+git push -u origin main
+```
