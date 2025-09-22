@@ -1,0 +1,395 @@
+2025-09-21 20:14:28 | INFO | Processed JSON message: {'timestamp': '2025-09-22T01:14:28.335760', 'temperature': 142.2}
+2025-09-21 20:14:33 | INFO | Sent message to topic 'smoker_csv': {'timestamp': '2025-09-22T01:14:33.337449', 'temperature': 142.0}
+2025-09-21 20:14:38 | INFO | Sent message to topic 'smoker_csv': {'timestamp': '2025-09-22T01:14:38.339397', 'temperature': 142.2}
+2025-09-21 21:12:57 | INFO | Logging to file: logs/project_log.log
+2025-09-21 21:12:57 | INFO | Log sanitization enabled, personal info removed
+2025-09-21 21:12:57 | INFO | Project root: PROJECT_ROOT
+2025-09-21 21:12:57 | INFO | Data folder: PROJECT_ROOT/data
+2025-09-21 21:12:57 | INFO | Data file: PROJECT_ROOT/data/smoker_temps.csv
+2025-09-21 21:12:57 | INFO | START producer.
+2025-09-21 21:12:57 | INFO | Kafka broker address: localhost:9092
+2025-09-21 21:12:57 | INFO | Kafka is ready. Brokers: {'throttle_time_ms': 0, 'brokers': [{'node_id': 1, 'host': 'localhost', 'port': 9092, 'rack': None}], 'cluster_id': 'hMNex-8bR3emkYlz6xmmZg', 'controller_id': 1}
+2025-09-21 21:12:57 | INFO | Kafka topic: smoker_csv
+2025-09-21 21:12:57 | INFO | Message interval: 5 seconds
+2025-09-21 21:12:57 | INFO | Kafka broker address: localhost:9092
+2025-09-21 21:12:57 | INFO | Connecting to Kafka broker at localhost:9092...
+2025-09-21 21:12:57 | INFO | Kafka producer successfully created.
+2025-09-21 21:12:57 | INFO | Kafka broker address: localhost:9092
+2025-09-21 21:12:57 | INFO | Topic 'smoker_csv' already exists. Recreating fresh...
+2025-09-21 21:12:58 | INFO | Requested deletion of topic 'smoker_csv'.
+2025-09-21 21:12:58 | INFO | Topic 'smoker_csv' created successfully.
+2025-09-21 21:12:58 | INFO | Kafka topic 'smoker_csv' is ready.
+2025-09-21 21:12:58 | INFO | Starting message production to topic 'smoker_csv'...
+2025-09-21 21:12:58 | INFO | Opening data file in read mode: PROJECT_ROOT/data/smoker_temps.csv
+2025-09-21 21:12:58 | INFO | Reading data from file: PROJECT_ROOT/data/smoker_temps.csv
+2025-09-21 21:12:58 | INFO | Sent message to topic 'smoker_csv': {'timestamp': '2025-09-22T02:12:58.058189', 'temperature': 70.4}
+2025-09-21 21:13:03 | INFO | Sent message to topic 'smoker_csv': {'timestamp': '2025-09-22T02:13:03.060755', 'temperature': 70.8}
+2025-09-21 21:13:08 | INFO | Sent message to topic 'smoker_csv': {'timestamp': '2025-09-22T02:13:08.064655', 'temperature': 71.2}
+2025-09-21 21:13:13 | INFO | Sent message to topic 'smoker_csv': {'timestamp': '2025-09-22T02:13:13.066838', 'temperature': 71.6}
+2025-09-21 21:13:15 | INFO | Logging to file: logs/project_log.log
+2025-09-21 21:13:15 | INFO | Log sanitization enabled, personal info removed
+2025-09-21 21:13:15 | INFO | START consumer.
+2025-09-21 21:13:15 | INFO | Kafka topic: smoker_csv
+2025-09-21 21:13:15 | INFO | Kafka consumer group id: smoker_group
+2025-09-21 21:13:15 | INFO | Rolling window size: 10
+2025-09-21 21:13:15 | INFO | Kafka broker address: localhost:9092
+2025-09-21 21:13:15 | INFO | Creating Kafka consumer. Topic='smoker_csv' and group ID='smoker_group'.
+2025-09-21 21:13:15 | INFO | Kafka consumer created successfully.
+2025-09-21 21:13:15 | INFO | Polling messages from topic 'smoker_csv'...
+2025-09-21 21:13:18 | INFO | Sent message to topic 'smoker_csv': {'timestamp': '2025-09-22T02:13:18.069210', 'temperature': 72.0}
+2025-09-21 21:13:18 | INFO | Processed JSON message: {'timestamp': '2025-09-22T02:12:58.058189', 'temperature': 70.4}
+2025-09-21 21:13:18 | INFO | High temp threshold: 90.0°F
+2025-09-21 21:13:18 | ERROR | Error processing message '{"timestamp": "2025-09-22T02:12:58.058189", "temperature": 70.4}': update_chart() missing 2 required positional arguments: 'rolling_window' and 'window_size'
+2025-09-21 21:13:18 | INFO | Processed JSON message: {'timestamp': '2025-09-22T02:13:03.060755', 'temperature': 70.8}
+2025-09-21 21:13:18 | INFO | High temp threshold: 90.0°F
+2025-09-21 21:13:18 | ERROR | Error processing message '{"timestamp": "2025-09-22T02:13:03.060755", "temperature": 70.8}': update_chart() missing 2 required positional arguments: 'rolling_window' and 'window_size'
+2025-09-21 21:13:18 | INFO | Processed JSON message: {'timestamp': '2025-09-22T02:13:08.064655', 'temperature': 71.2}
+2025-09-21 21:13:18 | INFO | High temp threshold: 90.0°F
+2025-09-21 21:13:18 | ERROR | Error processing message '{"timestamp": "2025-09-22T02:13:08.064655", "temperature": 71.2}': update_chart() missing 2 required positional arguments: 'rolling_window' and 'window_size'
+2025-09-21 21:13:18 | INFO | Processed JSON message: {'timestamp': '2025-09-22T02:13:13.066838', 'temperature': 71.6}
+2025-09-21 21:13:18 | INFO | High temp threshold: 90.0°F
+2025-09-21 21:13:18 | ERROR | Error processing message '{"timestamp": "2025-09-22T02:13:13.066838", "temperature": 71.6}': update_chart() missing 2 required positional arguments: 'rolling_window' and 'window_size'
+2025-09-21 21:13:18 | INFO | Processed JSON message: {'timestamp': '2025-09-22T02:13:18.069210', 'temperature': 72.0}
+2025-09-21 21:13:18 | INFO | High temp threshold: 90.0°F
+2025-09-21 21:13:18 | ERROR | Error processing message '{"timestamp": "2025-09-22T02:13:18.069210", "temperature": 72.0}': update_chart() missing 2 required positional arguments: 'rolling_window' and 'window_size'
+2025-09-21 21:13:23 | INFO | Sent message to topic 'smoker_csv': {'timestamp': '2025-09-22T02:13:23.071143', 'temperature': 72.4}
+2025-09-21 21:13:23 | INFO | Processed JSON message: {'timestamp': '2025-09-22T02:13:23.071143', 'temperature': 72.4}
+2025-09-21 21:13:23 | INFO | High temp threshold: 90.0°F
+2025-09-21 21:13:23 | ERROR | Error processing message '{"timestamp": "2025-09-22T02:13:23.071143", "temperature": 72.4}': update_chart() missing 2 required positional arguments: 'rolling_window' and 'window_size'
+2025-09-21 21:13:28 | INFO | Sent message to topic 'smoker_csv': {'timestamp': '2025-09-22T02:13:28.073590', 'temperature': 72.8}
+2025-09-21 21:13:28 | INFO | Processed JSON message: {'timestamp': '2025-09-22T02:13:28.073590', 'temperature': 72.8}
+2025-09-21 21:13:28 | INFO | High temp threshold: 90.0°F
+2025-09-21 21:13:28 | ERROR | Error processing message '{"timestamp": "2025-09-22T02:13:28.073590", "temperature": 72.8}': update_chart() missing 2 required positional arguments: 'rolling_window' and 'window_size'
+2025-09-21 21:13:33 | INFO | Sent message to topic 'smoker_csv': {'timestamp': '2025-09-22T02:13:33.077322', 'temperature': 73.2}
+2025-09-21 21:13:33 | INFO | Processed JSON message: {'timestamp': '2025-09-22T02:13:33.077322', 'temperature': 73.2}
+2025-09-21 21:13:33 | INFO | High temp threshold: 90.0°F
+2025-09-21 21:13:33 | ERROR | Error processing message '{"timestamp": "2025-09-22T02:13:33.077322", "temperature": 73.2}': update_chart() missing 2 required positional arguments: 'rolling_window' and 'window_size'
+2025-09-21 21:13:38 | INFO | Sent message to topic 'smoker_csv': {'timestamp': '2025-09-22T02:13:38.079960', 'temperature': 73.6}
+2025-09-21 21:13:38 | INFO | Processed JSON message: {'timestamp': '2025-09-22T02:13:38.079960', 'temperature': 73.6}
+2025-09-21 21:13:38 | INFO | High temp threshold: 90.0°F
+2025-09-21 21:13:38 | ERROR | Error processing message '{"timestamp": "2025-09-22T02:13:38.079960", "temperature": 73.6}': update_chart() missing 2 required positional arguments: 'rolling_window' and 'window_size'
+2025-09-21 21:13:43 | INFO | Sent message to topic 'smoker_csv': {'timestamp': '2025-09-22T02:13:43.081900', 'temperature': 74.0}
+2025-09-21 21:13:43 | INFO | Processed JSON message: {'timestamp': '2025-09-22T02:13:43.081900', 'temperature': 74.0}
+2025-09-21 21:13:43 | INFO | High temp threshold: 90.0°F
+2025-09-21 21:13:43 | ERROR | Error processing message '{"timestamp": "2025-09-22T02:13:43.081900", "temperature": 74.0}': update_chart() missing 2 required positional arguments: 'rolling_window' and 'window_size'
+2025-09-21 21:13:48 | INFO | Sent message to topic 'smoker_csv': {'timestamp': '2025-09-22T02:13:48.083846', 'temperature': 74.4}
+2025-09-21 21:13:48 | INFO | Processed JSON message: {'timestamp': '2025-09-22T02:13:48.083846', 'temperature': 74.4}
+2025-09-21 21:13:48 | INFO | High temp threshold: 90.0°F
+2025-09-21 21:13:48 | ERROR | Error processing message '{"timestamp": "2025-09-22T02:13:48.083846", "temperature": 74.4}': update_chart() missing 2 required positional arguments: 'rolling_window' and 'window_size'
+2025-09-21 21:13:53 | INFO | Sent message to topic 'smoker_csv': {'timestamp': '2025-09-22T02:13:53.085959', 'temperature': 74.8}
+2025-09-21 21:13:53 | INFO | Processed JSON message: {'timestamp': '2025-09-22T02:13:53.085959', 'temperature': 74.8}
+2025-09-21 21:13:53 | INFO | High temp threshold: 90.0°F
+2025-09-21 21:13:53 | ERROR | Error processing message '{"timestamp": "2025-09-22T02:13:53.085959", "temperature": 74.8}': update_chart() missing 2 required positional arguments: 'rolling_window' and 'window_size'
+2025-09-21 21:13:58 | INFO | Sent message to topic 'smoker_csv': {'timestamp': '2025-09-22T02:13:58.088396', 'temperature': 75.2}
+2025-09-21 21:13:58 | INFO | Processed JSON message: {'timestamp': '2025-09-22T02:13:58.088396', 'temperature': 75.2}
+2025-09-21 21:13:58 | INFO | High temp threshold: 90.0°F
+2025-09-21 21:13:58 | ERROR | Error processing message '{"timestamp": "2025-09-22T02:13:58.088396", "temperature": 75.2}': update_chart() missing 2 required positional arguments: 'rolling_window' and 'window_size'
+2025-09-21 21:14:03 | INFO | Sent message to topic 'smoker_csv': {'timestamp': '2025-09-22T02:14:03.089559', 'temperature': 75.6}
+2025-09-21 21:14:03 | INFO | Processed JSON message: {'timestamp': '2025-09-22T02:14:03.089559', 'temperature': 75.6}
+2025-09-21 21:14:03 | INFO | High temp threshold: 90.0°F
+2025-09-21 21:14:03 | ERROR | Error processing message '{"timestamp": "2025-09-22T02:14:03.089559", "temperature": 75.6}': update_chart() missing 2 required positional arguments: 'rolling_window' and 'window_size'
+2025-09-21 21:14:08 | INFO | Sent message to topic 'smoker_csv': {'timestamp': '2025-09-22T02:14:08.091391', 'temperature': 76.0}
+2025-09-21 21:14:08 | INFO | Processed JSON message: {'timestamp': '2025-09-22T02:14:08.091391', 'temperature': 76.0}
+2025-09-21 21:14:08 | INFO | High temp threshold: 90.0°F
+2025-09-21 21:14:08 | ERROR | Error processing message '{"timestamp": "2025-09-22T02:14:08.091391", "temperature": 76.0}': update_chart() missing 2 required positional arguments: 'rolling_window' and 'window_size'
+2025-09-21 21:14:13 | INFO | Sent message to topic 'smoker_csv': {'timestamp': '2025-09-22T02:14:13.093227', 'temperature': 76.4}
+2025-09-21 21:14:13 | INFO | Processed JSON message: {'timestamp': '2025-09-22T02:14:13.093227', 'temperature': 76.4}
+2025-09-21 21:14:13 | INFO | High temp threshold: 90.0°F
+2025-09-21 21:14:13 | ERROR | Error processing message '{"timestamp": "2025-09-22T02:14:13.093227", "temperature": 76.4}': update_chart() missing 2 required positional arguments: 'rolling_window' and 'window_size'
+2025-09-21 21:14:18 | INFO | Sent message to topic 'smoker_csv': {'timestamp': '2025-09-22T02:14:18.095034', 'temperature': 76.8}
+2025-09-21 21:14:18 | INFO | Processed JSON message: {'timestamp': '2025-09-22T02:14:18.095034', 'temperature': 76.8}
+2025-09-21 21:14:18 | INFO | High temp threshold: 90.0°F
+2025-09-21 21:14:18 | ERROR | Error processing message '{"timestamp": "2025-09-22T02:14:18.095034", "temperature": 76.8}': update_chart() missing 2 required positional arguments: 'rolling_window' and 'window_size'
+2025-09-21 21:14:23 | INFO | Sent message to topic 'smoker_csv': {'timestamp': '2025-09-22T02:14:23.098101', 'temperature': 77.2}
+2025-09-21 21:14:23 | INFO | Processed JSON message: {'timestamp': '2025-09-22T02:14:23.098101', 'temperature': 77.2}
+2025-09-21 21:14:23 | INFO | High temp threshold: 90.0°F
+2025-09-21 21:14:23 | ERROR | Error processing message '{"timestamp": "2025-09-22T02:14:23.098101", "temperature": 77.2}': update_chart() missing 2 required positional arguments: 'rolling_window' and 'window_size'
+2025-09-21 21:14:28 | INFO | Sent message to topic 'smoker_csv': {'timestamp': '2025-09-22T02:14:28.099445', 'temperature': 77.6}
+2025-09-21 21:14:28 | INFO | Processed JSON message: {'timestamp': '2025-09-22T02:14:28.099445', 'temperature': 77.6}
+2025-09-21 21:14:28 | INFO | High temp threshold: 90.0°F
+2025-09-21 21:14:28 | ERROR | Error processing message '{"timestamp": "2025-09-22T02:14:28.099445", "temperature": 77.6}': update_chart() missing 2 required positional arguments: 'rolling_window' and 'window_size'
+2025-09-21 21:14:33 | INFO | Sent message to topic 'smoker_csv': {'timestamp': '2025-09-22T02:14:33.101673', 'temperature': 78.0}
+2025-09-21 21:14:33 | INFO | Processed JSON message: {'timestamp': '2025-09-22T02:14:33.101673', 'temperature': 78.0}
+2025-09-21 21:14:33 | INFO | High temp threshold: 90.0°F
+2025-09-21 21:14:33 | ERROR | Error processing message '{"timestamp": "2025-09-22T02:14:33.101673", "temperature": 78.0}': update_chart() missing 2 required positional arguments: 'rolling_window' and 'window_size'
+2025-09-21 21:14:38 | INFO | Sent message to topic 'smoker_csv': {'timestamp': '2025-09-22T02:14:38.103605', 'temperature': 78.4}
+2025-09-21 21:14:38 | INFO | Processed JSON message: {'timestamp': '2025-09-22T02:14:38.103605', 'temperature': 78.4}
+2025-09-21 21:14:38 | INFO | High temp threshold: 90.0°F
+2025-09-21 21:14:38 | ERROR | Error processing message '{"timestamp": "2025-09-22T02:14:38.103605", "temperature": 78.4}': update_chart() missing 2 required positional arguments: 'rolling_window' and 'window_size'
+2025-09-21 21:14:43 | INFO | Sent message to topic 'smoker_csv': {'timestamp': '2025-09-22T02:14:43.105341', 'temperature': 78.8}
+2025-09-21 21:14:43 | INFO | Processed JSON message: {'timestamp': '2025-09-22T02:14:43.105341', 'temperature': 78.8}
+2025-09-21 21:14:43 | INFO | High temp threshold: 90.0°F
+2025-09-21 21:14:43 | ERROR | Error processing message '{"timestamp": "2025-09-22T02:14:43.105341", "temperature": 78.8}': update_chart() missing 2 required positional arguments: 'rolling_window' and 'window_size'
+2025-09-21 21:14:48 | INFO | Sent message to topic 'smoker_csv': {'timestamp': '2025-09-22T02:14:48.106154', 'temperature': 79.2}
+2025-09-21 21:14:48 | INFO | Processed JSON message: {'timestamp': '2025-09-22T02:14:48.106154', 'temperature': 79.2}
+2025-09-21 21:14:48 | INFO | High temp threshold: 90.0°F
+2025-09-21 21:14:48 | ERROR | Error processing message '{"timestamp": "2025-09-22T02:14:48.106154", "temperature": 79.2}': update_chart() missing 2 required positional arguments: 'rolling_window' and 'window_size'
+2025-09-21 21:14:53 | INFO | Sent message to topic 'smoker_csv': {'timestamp': '2025-09-22T02:14:53.107501', 'temperature': 79.6}
+2025-09-21 21:14:53 | INFO | Processed JSON message: {'timestamp': '2025-09-22T02:14:53.107501', 'temperature': 79.6}
+2025-09-21 21:14:53 | INFO | High temp threshold: 90.0°F
+2025-09-21 21:14:53 | ERROR | Error processing message '{"timestamp": "2025-09-22T02:14:53.107501", "temperature": 79.6}': update_chart() missing 2 required positional arguments: 'rolling_window' and 'window_size'
+2025-09-21 21:14:58 | INFO | Sent message to topic 'smoker_csv': {'timestamp': '2025-09-22T02:14:58.109186', 'temperature': 80.0}
+2025-09-21 21:14:58 | INFO | Processed JSON message: {'timestamp': '2025-09-22T02:14:58.109186', 'temperature': 80.0}
+2025-09-21 21:14:58 | INFO | High temp threshold: 90.0°F
+2025-09-21 21:14:58 | ERROR | Error processing message '{"timestamp": "2025-09-22T02:14:58.109186", "temperature": 80.0}': update_chart() missing 2 required positional arguments: 'rolling_window' and 'window_size'
+2025-09-21 21:15:03 | INFO | Sent message to topic 'smoker_csv': {'timestamp': '2025-09-22T02:15:03.111189', 'temperature': 80.4}
+2025-09-21 21:15:03 | INFO | Processed JSON message: {'timestamp': '2025-09-22T02:15:03.111189', 'temperature': 80.4}
+2025-09-21 21:15:03 | INFO | High temp threshold: 90.0°F
+2025-09-21 21:15:03 | ERROR | Error processing message '{"timestamp": "2025-09-22T02:15:03.111189", "temperature": 80.4}': update_chart() missing 2 required positional arguments: 'rolling_window' and 'window_size'
+2025-09-21 21:15:08 | INFO | Sent message to topic 'smoker_csv': {'timestamp': '2025-09-22T02:15:08.112227', 'temperature': 80.8}
+2025-09-21 21:15:08 | INFO | Processed JSON message: {'timestamp': '2025-09-22T02:15:08.112227', 'temperature': 80.8}
+2025-09-21 21:15:08 | INFO | High temp threshold: 90.0°F
+2025-09-21 21:15:08 | ERROR | Error processing message '{"timestamp": "2025-09-22T02:15:08.112227", "temperature": 80.8}': update_chart() missing 2 required positional arguments: 'rolling_window' and 'window_size'
+2025-09-21 21:15:13 | INFO | Sent message to topic 'smoker_csv': {'timestamp': '2025-09-22T02:15:13.113684', 'temperature': 81.2}
+2025-09-21 21:15:13 | INFO | Processed JSON message: {'timestamp': '2025-09-22T02:15:13.113684', 'temperature': 81.2}
+2025-09-21 21:15:13 | INFO | High temp threshold: 90.0°F
+2025-09-21 21:15:13 | ERROR | Error processing message '{"timestamp": "2025-09-22T02:15:13.113684", "temperature": 81.2}': update_chart() missing 2 required positional arguments: 'rolling_window' and 'window_size'
+2025-09-21 21:15:18 | INFO | Sent message to topic 'smoker_csv': {'timestamp': '2025-09-22T02:15:18.116989', 'temperature': 81.6}
+2025-09-21 21:15:18 | INFO | Processed JSON message: {'timestamp': '2025-09-22T02:15:18.116989', 'temperature': 81.6}
+2025-09-21 21:15:18 | INFO | High temp threshold: 90.0°F
+2025-09-21 21:15:18 | ERROR | Error processing message '{"timestamp": "2025-09-22T02:15:18.116989", "temperature": 81.6}': update_chart() missing 2 required positional arguments: 'rolling_window' and 'window_size'
+2025-09-21 21:15:23 | INFO | Sent message to topic 'smoker_csv': {'timestamp': '2025-09-22T02:15:23.118891', 'temperature': 82.0}
+2025-09-21 21:15:23 | INFO | Processed JSON message: {'timestamp': '2025-09-22T02:15:23.118891', 'temperature': 82.0}
+2025-09-21 21:15:23 | INFO | High temp threshold: 90.0°F
+2025-09-21 21:15:23 | ERROR | Error processing message '{"timestamp": "2025-09-22T02:15:23.118891", "temperature": 82.0}': update_chart() missing 2 required positional arguments: 'rolling_window' and 'window_size'
+2025-09-21 21:15:28 | INFO | Sent message to topic 'smoker_csv': {'timestamp': '2025-09-22T02:15:28.120813', 'temperature': 82.4}
+2025-09-21 21:15:28 | INFO | Processed JSON message: {'timestamp': '2025-09-22T02:15:28.120813', 'temperature': 82.4}
+2025-09-21 21:15:28 | INFO | High temp threshold: 90.0°F
+2025-09-21 21:15:28 | ERROR | Error processing message '{"timestamp": "2025-09-22T02:15:28.120813", "temperature": 82.4}': update_chart() missing 2 required positional arguments: 'rolling_window' and 'window_size'
+2025-09-21 21:15:33 | INFO | Sent message to topic 'smoker_csv': {'timestamp': '2025-09-22T02:15:33.122878', 'temperature': 82.8}
+2025-09-21 21:15:33 | INFO | Processed JSON message: {'timestamp': '2025-09-22T02:15:33.122878', 'temperature': 82.8}
+2025-09-21 21:15:33 | INFO | High temp threshold: 90.0°F
+2025-09-21 21:15:33 | ERROR | Error processing message '{"timestamp": "2025-09-22T02:15:33.122878", "temperature": 82.8}': update_chart() missing 2 required positional arguments: 'rolling_window' and 'window_size'
+2025-09-21 21:15:38 | INFO | Sent message to topic 'smoker_csv': {'timestamp': '2025-09-22T02:15:38.124328', 'temperature': 83.2}
+2025-09-21 21:15:38 | INFO | Processed JSON message: {'timestamp': '2025-09-22T02:15:38.124328', 'temperature': 83.2}
+2025-09-21 21:15:38 | INFO | High temp threshold: 90.0°F
+2025-09-21 21:15:38 | ERROR | Error processing message '{"timestamp": "2025-09-22T02:15:38.124328", "temperature": 83.2}': update_chart() missing 2 required positional arguments: 'rolling_window' and 'window_size'
+2025-09-21 21:15:43 | INFO | Sent message to topic 'smoker_csv': {'timestamp': '2025-09-22T02:15:43.126445', 'temperature': 83.6}
+2025-09-21 21:15:43 | INFO | Processed JSON message: {'timestamp': '2025-09-22T02:15:43.126445', 'temperature': 83.6}
+2025-09-21 21:15:43 | INFO | High temp threshold: 90.0°F
+2025-09-21 21:15:43 | ERROR | Error processing message '{"timestamp": "2025-09-22T02:15:43.126445", "temperature": 83.6}': update_chart() missing 2 required positional arguments: 'rolling_window' and 'window_size'
+2025-09-21 21:15:48 | INFO | Sent message to topic 'smoker_csv': {'timestamp': '2025-09-22T02:15:48.128155', 'temperature': 84.0}
+2025-09-21 21:15:48 | INFO | Processed JSON message: {'timestamp': '2025-09-22T02:15:48.128155', 'temperature': 84.0}
+2025-09-21 21:15:48 | INFO | High temp threshold: 90.0°F
+2025-09-21 21:15:48 | ERROR | Error processing message '{"timestamp": "2025-09-22T02:15:48.128155", "temperature": 84.0}': update_chart() missing 2 required positional arguments: 'rolling_window' and 'window_size'
+2025-09-21 21:15:53 | INFO | Sent message to topic 'smoker_csv': {'timestamp': '2025-09-22T02:15:53.130214', 'temperature': 84.4}
+2025-09-21 21:15:53 | INFO | Processed JSON message: {'timestamp': '2025-09-22T02:15:53.130214', 'temperature': 84.4}
+2025-09-21 21:15:53 | INFO | High temp threshold: 90.0°F
+2025-09-21 21:15:53 | ERROR | Error processing message '{"timestamp": "2025-09-22T02:15:53.130214", "temperature": 84.4}': update_chart() missing 2 required positional arguments: 'rolling_window' and 'window_size'
+2025-09-21 21:15:58 | INFO | Sent message to topic 'smoker_csv': {'timestamp': '2025-09-22T02:15:58.132609', 'temperature': 84.8}
+2025-09-21 21:15:58 | INFO | Processed JSON message: {'timestamp': '2025-09-22T02:15:58.132609', 'temperature': 84.8}
+2025-09-21 21:15:58 | INFO | High temp threshold: 90.0°F
+2025-09-21 21:15:58 | ERROR | Error processing message '{"timestamp": "2025-09-22T02:15:58.132609", "temperature": 84.8}': update_chart() missing 2 required positional arguments: 'rolling_window' and 'window_size'
+2025-09-21 21:16:03 | INFO | Sent message to topic 'smoker_csv': {'timestamp': '2025-09-22T02:16:03.133730', 'temperature': 85.2}
+2025-09-21 21:16:03 | INFO | Processed JSON message: {'timestamp': '2025-09-22T02:16:03.133730', 'temperature': 85.2}
+2025-09-21 21:16:03 | INFO | High temp threshold: 90.0°F
+2025-09-21 21:16:03 | ERROR | Error processing message '{"timestamp": "2025-09-22T02:16:03.133730", "temperature": 85.2}': update_chart() missing 2 required positional arguments: 'rolling_window' and 'window_size'
+2025-09-21 21:16:08 | INFO | Sent message to topic 'smoker_csv': {'timestamp': '2025-09-22T02:16:08.135222', 'temperature': 85.6}
+2025-09-21 21:16:08 | INFO | Processed JSON message: {'timestamp': '2025-09-22T02:16:08.135222', 'temperature': 85.6}
+2025-09-21 21:16:08 | INFO | High temp threshold: 90.0°F
+2025-09-21 21:16:08 | ERROR | Error processing message '{"timestamp": "2025-09-22T02:16:08.135222", "temperature": 85.6}': update_chart() missing 2 required positional arguments: 'rolling_window' and 'window_size'
+2025-09-21 21:16:13 | INFO | Sent message to topic 'smoker_csv': {'timestamp': '2025-09-22T02:16:13.137129', 'temperature': 86.0}
+2025-09-21 21:16:13 | INFO | Processed JSON message: {'timestamp': '2025-09-22T02:16:13.137129', 'temperature': 86.0}
+2025-09-21 21:16:13 | INFO | High temp threshold: 90.0°F
+2025-09-21 21:16:13 | ERROR | Error processing message '{"timestamp": "2025-09-22T02:16:13.137129", "temperature": 86.0}': update_chart() missing 2 required positional arguments: 'rolling_window' and 'window_size'
+2025-09-21 21:16:18 | INFO | Sent message to topic 'smoker_csv': {'timestamp': '2025-09-22T02:16:18.138840', 'temperature': 86.4}
+2025-09-21 21:16:18 | INFO | Processed JSON message: {'timestamp': '2025-09-22T02:16:18.138840', 'temperature': 86.4}
+2025-09-21 21:16:18 | INFO | High temp threshold: 90.0°F
+2025-09-21 21:16:18 | ERROR | Error processing message '{"timestamp": "2025-09-22T02:16:18.138840", "temperature": 86.4}': update_chart() missing 2 required positional arguments: 'rolling_window' and 'window_size'
+2025-09-21 21:16:23 | INFO | Sent message to topic 'smoker_csv': {'timestamp': '2025-09-22T02:16:23.140616', 'temperature': 86.8}
+2025-09-21 21:16:23 | INFO | Processed JSON message: {'timestamp': '2025-09-22T02:16:23.140616', 'temperature': 86.8}
+2025-09-21 21:16:23 | INFO | High temp threshold: 90.0°F
+2025-09-21 21:16:23 | ERROR | Error processing message '{"timestamp": "2025-09-22T02:16:23.140616", "temperature": 86.8}': update_chart() missing 2 required positional arguments: 'rolling_window' and 'window_size'
+2025-09-21 21:16:28 | INFO | Sent message to topic 'smoker_csv': {'timestamp': '2025-09-22T02:16:28.144235', 'temperature': 87.2}
+2025-09-21 21:16:28 | INFO | Processed JSON message: {'timestamp': '2025-09-22T02:16:28.144235', 'temperature': 87.2}
+2025-09-21 21:16:28 | INFO | High temp threshold: 90.0°F
+2025-09-21 21:16:28 | ERROR | Error processing message '{"timestamp": "2025-09-22T02:16:28.144235", "temperature": 87.2}': update_chart() missing 2 required positional arguments: 'rolling_window' and 'window_size'
+2025-09-21 21:16:33 | INFO | Sent message to topic 'smoker_csv': {'timestamp': '2025-09-22T02:16:33.146259', 'temperature': 87.6}
+2025-09-21 21:16:33 | INFO | Processed JSON message: {'timestamp': '2025-09-22T02:16:33.146259', 'temperature': 87.6}
+2025-09-21 21:16:33 | INFO | High temp threshold: 90.0°F
+2025-09-21 21:16:33 | ERROR | Error processing message '{"timestamp": "2025-09-22T02:16:33.146259", "temperature": 87.6}': update_chart() missing 2 required positional arguments: 'rolling_window' and 'window_size'
+2025-09-21 21:16:38 | INFO | Sent message to topic 'smoker_csv': {'timestamp': '2025-09-22T02:16:38.148390', 'temperature': 88.0}
+2025-09-21 21:16:38 | INFO | Processed JSON message: {'timestamp': '2025-09-22T02:16:38.148390', 'temperature': 88.0}
+2025-09-21 21:16:38 | INFO | High temp threshold: 90.0°F
+2025-09-21 21:16:38 | ERROR | Error processing message '{"timestamp": "2025-09-22T02:16:38.148390", "temperature": 88.0}': update_chart() missing 2 required positional arguments: 'rolling_window' and 'window_size'
+2025-09-21 21:16:43 | INFO | Sent message to topic 'smoker_csv': {'timestamp': '2025-09-22T02:16:43.150131', 'temperature': 88.4}
+2025-09-21 21:16:43 | INFO | Processed JSON message: {'timestamp': '2025-09-22T02:16:43.150131', 'temperature': 88.4}
+2025-09-21 21:16:43 | INFO | High temp threshold: 90.0°F
+2025-09-21 21:16:43 | ERROR | Error processing message '{"timestamp": "2025-09-22T02:16:43.150131", "temperature": 88.4}': update_chart() missing 2 required positional arguments: 'rolling_window' and 'window_size'
+2025-09-21 21:16:48 | INFO | Sent message to topic 'smoker_csv': {'timestamp': '2025-09-22T02:16:48.152366', 'temperature': 88.8}
+2025-09-21 21:16:48 | INFO | Processed JSON message: {'timestamp': '2025-09-22T02:16:48.152366', 'temperature': 88.8}
+2025-09-21 21:16:48 | INFO | High temp threshold: 90.0°F
+2025-09-21 21:16:48 | ERROR | Error processing message '{"timestamp": "2025-09-22T02:16:48.152366", "temperature": 88.8}': update_chart() missing 2 required positional arguments: 'rolling_window' and 'window_size'
+2025-09-21 21:16:53 | INFO | Sent message to topic 'smoker_csv': {'timestamp': '2025-09-22T02:16:53.154463', 'temperature': 89.2}
+2025-09-21 21:16:53 | INFO | Processed JSON message: {'timestamp': '2025-09-22T02:16:53.154463', 'temperature': 89.2}
+2025-09-21 21:16:53 | INFO | High temp threshold: 90.0°F
+2025-09-21 21:16:53 | ERROR | Error processing message '{"timestamp": "2025-09-22T02:16:53.154463", "temperature": 89.2}': update_chart() missing 2 required positional arguments: 'rolling_window' and 'window_size'
+2025-09-21 21:16:58 | INFO | Sent message to topic 'smoker_csv': {'timestamp': '2025-09-22T02:16:58.156429', 'temperature': 89.6}
+2025-09-21 21:16:58 | INFO | Processed JSON message: {'timestamp': '2025-09-22T02:16:58.156429', 'temperature': 89.6}
+2025-09-21 21:16:58 | INFO | High temp threshold: 90.0°F
+2025-09-21 21:16:58 | ERROR | Error processing message '{"timestamp": "2025-09-22T02:16:58.156429", "temperature": 89.6}': update_chart() missing 2 required positional arguments: 'rolling_window' and 'window_size'
+2025-09-21 21:17:03 | INFO | Sent message to topic 'smoker_csv': {'timestamp': '2025-09-22T02:17:03.157267', 'temperature': 90.0}
+2025-09-21 21:17:03 | INFO | Processed JSON message: {'timestamp': '2025-09-22T02:17:03.157267', 'temperature': 90.0}
+2025-09-21 21:17:03 | INFO | High temp threshold: 90.0°F
+2025-09-21 21:17:03 | ERROR | Error processing message '{"timestamp": "2025-09-22T02:17:03.157267", "temperature": 90.0}': update_chart() missing 2 required positional arguments: 'rolling_window' and 'window_size'
+2025-09-21 21:17:08 | INFO | Sent message to topic 'smoker_csv': {'timestamp': '2025-09-22T02:17:08.161300', 'temperature': 90.4}
+2025-09-21 21:17:08 | INFO | Processed JSON message: {'timestamp': '2025-09-22T02:17:08.161300', 'temperature': 90.4}
+2025-09-21 21:17:08 | INFO | High temp threshold: 90.0°F
+2025-09-21 21:17:08 | ERROR | Error processing message '{"timestamp": "2025-09-22T02:17:08.161300", "temperature": 90.4}': update_chart() missing 2 required positional arguments: 'rolling_window' and 'window_size'
+2025-09-21 21:17:13 | INFO | Sent message to topic 'smoker_csv': {'timestamp': '2025-09-22T02:17:13.162731', 'temperature': 90.8}
+2025-09-21 21:17:13 | INFO | Processed JSON message: {'timestamp': '2025-09-22T02:17:13.162731', 'temperature': 90.8}
+2025-09-21 21:17:13 | INFO | High temp threshold: 90.0°F
+2025-09-21 21:17:13 | ERROR | Error processing message '{"timestamp": "2025-09-22T02:17:13.162731", "temperature": 90.8}': update_chart() missing 2 required positional arguments: 'rolling_window' and 'window_size'
+2025-09-21 21:17:18 | INFO | Sent message to topic 'smoker_csv': {'timestamp': '2025-09-22T02:17:18.164281', 'temperature': 91.2}
+2025-09-21 21:17:18 | INFO | Processed JSON message: {'timestamp': '2025-09-22T02:17:18.164281', 'temperature': 91.2}
+2025-09-21 21:17:18 | INFO | High temp threshold: 90.0°F
+2025-09-21 21:17:18 | ERROR | Error processing message '{"timestamp": "2025-09-22T02:17:18.164281", "temperature": 91.2}': update_chart() missing 2 required positional arguments: 'rolling_window' and 'window_size'
+2025-09-21 21:17:23 | INFO | Sent message to topic 'smoker_csv': {'timestamp': '2025-09-22T02:17:23.165845', 'temperature': 91.6}
+2025-09-21 21:17:23 | INFO | Processed JSON message: {'timestamp': '2025-09-22T02:17:23.165845', 'temperature': 91.6}
+2025-09-21 21:17:23 | INFO | High temp threshold: 90.0°F
+2025-09-21 21:17:23 | ERROR | Error processing message '{"timestamp": "2025-09-22T02:17:23.165845", "temperature": 91.6}': update_chart() missing 2 required positional arguments: 'rolling_window' and 'window_size'
+2025-09-21 21:17:28 | INFO | Sent message to topic 'smoker_csv': {'timestamp': '2025-09-22T02:17:28.167352', 'temperature': 92.0}
+2025-09-21 21:17:28 | INFO | Processed JSON message: {'timestamp': '2025-09-22T02:17:28.167352', 'temperature': 92.0}
+2025-09-21 21:17:28 | INFO | High temp threshold: 90.0°F
+2025-09-21 21:17:28 | ERROR | Error processing message '{"timestamp": "2025-09-22T02:17:28.167352", "temperature": 92.0}': update_chart() missing 2 required positional arguments: 'rolling_window' and 'window_size'
+2025-09-21 21:17:33 | INFO | Sent message to topic 'smoker_csv': {'timestamp': '2025-09-22T02:17:33.168723', 'temperature': 92.4}
+2025-09-21 21:17:33 | INFO | Processed JSON message: {'timestamp': '2025-09-22T02:17:33.168723', 'temperature': 92.4}
+2025-09-21 21:17:33 | INFO | High temp threshold: 90.0°F
+2025-09-21 21:17:33 | ERROR | Error processing message '{"timestamp": "2025-09-22T02:17:33.168723", "temperature": 92.4}': update_chart() missing 2 required positional arguments: 'rolling_window' and 'window_size'
+2025-09-21 21:17:38 | INFO | Sent message to topic 'smoker_csv': {'timestamp': '2025-09-22T02:17:38.170927', 'temperature': 92.8}
+2025-09-21 21:17:38 | INFO | Processed JSON message: {'timestamp': '2025-09-22T02:17:38.170927', 'temperature': 92.8}
+2025-09-21 21:17:38 | INFO | High temp threshold: 90.0°F
+2025-09-21 21:17:38 | ERROR | Error processing message '{"timestamp": "2025-09-22T02:17:38.170927", "temperature": 92.8}': update_chart() missing 2 required positional arguments: 'rolling_window' and 'window_size'
+2025-09-21 21:17:43 | INFO | Sent message to topic 'smoker_csv': {'timestamp': '2025-09-22T02:17:43.172758', 'temperature': 93.2}
+2025-09-21 21:17:43 | INFO | Processed JSON message: {'timestamp': '2025-09-22T02:17:43.172758', 'temperature': 93.2}
+2025-09-21 21:17:43 | INFO | High temp threshold: 90.0°F
+2025-09-21 21:17:43 | ERROR | Error processing message '{"timestamp": "2025-09-22T02:17:43.172758", "temperature": 93.2}': update_chart() missing 2 required positional arguments: 'rolling_window' and 'window_size'
+2025-09-21 21:17:48 | INFO | Sent message to topic 'smoker_csv': {'timestamp': '2025-09-22T02:17:48.174792', 'temperature': 93.6}
+2025-09-21 21:17:48 | INFO | Processed JSON message: {'timestamp': '2025-09-22T02:17:48.174792', 'temperature': 93.6}
+2025-09-21 21:17:48 | INFO | High temp threshold: 90.0°F
+2025-09-21 21:17:48 | ERROR | Error processing message '{"timestamp": "2025-09-22T02:17:48.174792", "temperature": 93.6}': update_chart() missing 2 required positional arguments: 'rolling_window' and 'window_size'
+2025-09-21 21:17:53 | INFO | Sent message to topic 'smoker_csv': {'timestamp': '2025-09-22T02:17:53.176695', 'temperature': 94.0}
+2025-09-21 21:17:53 | INFO | Processed JSON message: {'timestamp': '2025-09-22T02:17:53.176695', 'temperature': 94.0}
+2025-09-21 21:17:53 | INFO | High temp threshold: 90.0°F
+2025-09-21 21:17:53 | ERROR | Error processing message '{"timestamp": "2025-09-22T02:17:53.176695", "temperature": 94.0}': update_chart() missing 2 required positional arguments: 'rolling_window' and 'window_size'
+2025-09-21 21:17:58 | INFO | Sent message to topic 'smoker_csv': {'timestamp': '2025-09-22T02:17:58.178311', 'temperature': 94.4}
+2025-09-21 21:17:58 | INFO | Processed JSON message: {'timestamp': '2025-09-22T02:17:58.178311', 'temperature': 94.4}
+2025-09-21 21:17:58 | INFO | High temp threshold: 90.0°F
+2025-09-21 21:17:58 | ERROR | Error processing message '{"timestamp": "2025-09-22T02:17:58.178311", "temperature": 94.4}': update_chart() missing 2 required positional arguments: 'rolling_window' and 'window_size'
+2025-09-21 21:18:03 | INFO | Sent message to topic 'smoker_csv': {'timestamp': '2025-09-22T02:18:03.179254', 'temperature': 94.8}
+2025-09-21 21:18:03 | INFO | Processed JSON message: {'timestamp': '2025-09-22T02:18:03.179254', 'temperature': 94.8}
+2025-09-21 21:18:03 | INFO | High temp threshold: 90.0°F
+2025-09-21 21:18:03 | ERROR | Error processing message '{"timestamp": "2025-09-22T02:18:03.179254", "temperature": 94.8}': update_chart() missing 2 required positional arguments: 'rolling_window' and 'window_size'
+2025-09-21 21:18:08 | INFO | Sent message to topic 'smoker_csv': {'timestamp': '2025-09-22T02:18:08.181460', 'temperature': 95.2}
+2025-09-21 21:18:08 | INFO | Processed JSON message: {'timestamp': '2025-09-22T02:18:08.181460', 'temperature': 95.2}
+2025-09-21 21:18:08 | INFO | High temp threshold: 90.0°F
+2025-09-21 21:18:08 | ERROR | Error processing message '{"timestamp": "2025-09-22T02:18:08.181460", "temperature": 95.2}': update_chart() missing 2 required positional arguments: 'rolling_window' and 'window_size'
+2025-09-21 21:18:13 | INFO | Sent message to topic 'smoker_csv': {'timestamp': '2025-09-22T02:18:13.183414', 'temperature': 95.6}
+2025-09-21 21:18:13 | INFO | Processed JSON message: {'timestamp': '2025-09-22T02:18:13.183414', 'temperature': 95.6}
+2025-09-21 21:18:13 | INFO | High temp threshold: 90.0°F
+2025-09-21 21:18:13 | ERROR | Error processing message '{"timestamp": "2025-09-22T02:18:13.183414", "temperature": 95.6}': update_chart() missing 2 required positional arguments: 'rolling_window' and 'window_size'
+2025-09-21 21:18:18 | INFO | Sent message to topic 'smoker_csv': {'timestamp': '2025-09-22T02:18:18.185446', 'temperature': 96.0}
+2025-09-21 21:18:18 | INFO | Processed JSON message: {'timestamp': '2025-09-22T02:18:18.185446', 'temperature': 96.0}
+2025-09-21 21:18:18 | INFO | High temp threshold: 90.0°F
+2025-09-21 21:18:18 | ERROR | Error processing message '{"timestamp": "2025-09-22T02:18:18.185446", "temperature": 96.0}': update_chart() missing 2 required positional arguments: 'rolling_window' and 'window_size'
+2025-09-21 21:18:23 | INFO | Sent message to topic 'smoker_csv': {'timestamp': '2025-09-22T02:18:23.188391', 'temperature': 96.4}
+2025-09-21 21:18:23 | INFO | Processed JSON message: {'timestamp': '2025-09-22T02:18:23.188391', 'temperature': 96.4}
+2025-09-21 21:18:23 | INFO | High temp threshold: 90.0°F
+2025-09-21 21:18:23 | ERROR | Error processing message '{"timestamp": "2025-09-22T02:18:23.188391", "temperature": 96.4}': update_chart() missing 2 required positional arguments: 'rolling_window' and 'window_size'
+2025-09-21 21:18:28 | INFO | Sent message to topic 'smoker_csv': {'timestamp': '2025-09-22T02:18:28.189743', 'temperature': 96.8}
+2025-09-21 21:18:28 | INFO | Processed JSON message: {'timestamp': '2025-09-22T02:18:28.189743', 'temperature': 96.8}
+2025-09-21 21:18:28 | INFO | High temp threshold: 90.0°F
+2025-09-21 21:18:28 | ERROR | Error processing message '{"timestamp": "2025-09-22T02:18:28.189743", "temperature": 96.8}': update_chart() missing 2 required positional arguments: 'rolling_window' and 'window_size'
+2025-09-21 21:18:31 | WARNING | Consumer interrupted by user.
+2025-09-21 21:18:31 | INFO | Kafka consumer for topic 'smoker_csv' closed.
+2025-09-21 21:18:33 | INFO | Sent message to topic 'smoker_csv': {'timestamp': '2025-09-22T02:18:33.192137', 'temperature': 97.2}
+2025-09-21 21:18:38 | INFO | Sent message to topic 'smoker_csv': {'timestamp': '2025-09-22T02:18:38.193372', 'temperature': 97.6}
+2025-09-21 21:18:43 | INFO | Sent message to topic 'smoker_csv': {'timestamp': '2025-09-22T02:18:43.195118', 'temperature': 98.0}
+2025-09-21 21:18:48 | INFO | Sent message to topic 'smoker_csv': {'timestamp': '2025-09-22T02:18:48.209275', 'temperature': 98.4}
+2025-09-21 21:18:53 | INFO | Sent message to topic 'smoker_csv': {'timestamp': '2025-09-22T02:18:53.210642', 'temperature': 98.8}
+2025-09-21 21:18:58 | INFO | Sent message to topic 'smoker_csv': {'timestamp': '2025-09-22T02:18:58.212364', 'temperature': 99.2}
+2025-09-21 21:19:03 | INFO | Sent message to topic 'smoker_csv': {'timestamp': '2025-09-22T02:19:03.213761', 'temperature': 99.6}
+2025-09-21 21:19:08 | INFO | Sent message to topic 'smoker_csv': {'timestamp': '2025-09-22T02:19:08.218127', 'temperature': 100.0}
+2025-09-21 21:19:13 | INFO | Sent message to topic 'smoker_csv': {'timestamp': '2025-09-22T02:19:13.219394', 'temperature': 100.4}
+2025-09-21 21:19:18 | INFO | Sent message to topic 'smoker_csv': {'timestamp': '2025-09-22T02:19:18.222311', 'temperature': 100.8}
+2025-09-21 21:19:23 | INFO | Sent message to topic 'smoker_csv': {'timestamp': '2025-09-22T02:19:23.223556', 'temperature': 101.2}
+2025-09-21 21:19:28 | INFO | Sent message to topic 'smoker_csv': {'timestamp': '2025-09-22T02:19:28.225184', 'temperature': 101.6}
+2025-09-21 21:19:33 | INFO | Sent message to topic 'smoker_csv': {'timestamp': '2025-09-22T02:19:33.226569', 'temperature': 102.0}
+2025-09-21 21:19:38 | INFO | Sent message to topic 'smoker_csv': {'timestamp': '2025-09-22T02:19:38.228563', 'temperature': 102.4}
+2025-09-21 21:19:43 | INFO | Sent message to topic 'smoker_csv': {'timestamp': '2025-09-22T02:19:43.230399', 'temperature': 102.8}
+2025-09-21 21:19:48 | INFO | Sent message to topic 'smoker_csv': {'timestamp': '2025-09-22T02:19:48.233676', 'temperature': 103.2}
+2025-09-21 21:19:53 | INFO | Sent message to topic 'smoker_csv': {'timestamp': '2025-09-22T02:19:53.235224', 'temperature': 103.6}
+2025-09-21 21:19:58 | INFO | Sent message to topic 'smoker_csv': {'timestamp': '2025-09-22T02:19:58.238272', 'temperature': 104.0}
+2025-09-21 21:20:03 | INFO | Sent message to topic 'smoker_csv': {'timestamp': '2025-09-22T02:20:03.241554', 'temperature': 104.4}
+2025-09-21 21:20:08 | INFO | Sent message to topic 'smoker_csv': {'timestamp': '2025-09-22T02:20:08.242535', 'temperature': 104.8}
+2025-09-21 21:20:13 | INFO | Sent message to topic 'smoker_csv': {'timestamp': '2025-09-22T02:20:13.245845', 'temperature': 105.2}
+2025-09-21 21:20:18 | INFO | Sent message to topic 'smoker_csv': {'timestamp': '2025-09-22T02:20:18.248797', 'temperature': 105.6}
+2025-09-21 21:20:23 | INFO | Sent message to topic 'smoker_csv': {'timestamp': '2025-09-22T02:20:23.250383', 'temperature': 106.0}
+2025-09-21 21:20:28 | INFO | Sent message to topic 'smoker_csv': {'timestamp': '2025-09-22T02:20:28.253025', 'temperature': 106.4}
+2025-09-21 21:20:33 | INFO | Sent message to topic 'smoker_csv': {'timestamp': '2025-09-22T02:20:33.254422', 'temperature': 106.8}
+2025-09-21 21:20:38 | INFO | Sent message to topic 'smoker_csv': {'timestamp': '2025-09-22T02:20:38.257228', 'temperature': 107.2}
+2025-09-21 21:20:43 | INFO | Sent message to topic 'smoker_csv': {'timestamp': '2025-09-22T02:20:43.258420', 'temperature': 107.6}
+2025-09-21 21:20:48 | INFO | Sent message to topic 'smoker_csv': {'timestamp': '2025-09-22T02:20:48.261286', 'temperature': 108.0}
+2025-09-21 21:20:53 | INFO | Sent message to topic 'smoker_csv': {'timestamp': '2025-09-22T02:20:53.264445', 'temperature': 108.4}
+2025-09-21 21:20:58 | INFO | Sent message to topic 'smoker_csv': {'timestamp': '2025-09-22T02:20:58.267929', 'temperature': 108.8}
+2025-09-21 21:21:03 | INFO | Sent message to topic 'smoker_csv': {'timestamp': '2025-09-22T02:21:03.269840', 'temperature': 109.2}
+2025-09-21 21:21:08 | INFO | Sent message to topic 'smoker_csv': {'timestamp': '2025-09-22T02:21:08.271717', 'temperature': 109.6}
+2025-09-21 21:21:13 | INFO | Sent message to topic 'smoker_csv': {'timestamp': '2025-09-22T02:21:13.273773', 'temperature': 110.0}
+2025-09-21 21:21:18 | INFO | Sent message to topic 'smoker_csv': {'timestamp': '2025-09-22T02:21:18.275628', 'temperature': 110.4}
+2025-09-21 21:21:23 | INFO | Sent message to topic 'smoker_csv': {'timestamp': '2025-09-22T02:21:23.278063', 'temperature': 110.8}
+2025-09-21 21:21:28 | INFO | Sent message to topic 'smoker_csv': {'timestamp': '2025-09-22T02:21:28.280679', 'temperature': 111.2}
+2025-09-21 21:21:33 | INFO | Sent message to topic 'smoker_csv': {'timestamp': '2025-09-22T02:21:33.317125', 'temperature': 111.6}
+2025-09-21 21:21:38 | INFO | Sent message to topic 'smoker_csv': {'timestamp': '2025-09-22T02:21:38.378791', 'temperature': 112.0}
+2025-09-21 21:21:43 | INFO | Sent message to topic 'smoker_csv': {'timestamp': '2025-09-22T02:21:43.391367', 'temperature': 112.4}
+2025-09-21 21:21:48 | INFO | Sent message to topic 'smoker_csv': {'timestamp': '2025-09-22T02:21:48.394022', 'temperature': 112.8}
+2025-09-21 21:21:53 | INFO | Sent message to topic 'smoker_csv': {'timestamp': '2025-09-22T02:21:53.396299', 'temperature': 113.2}
+2025-09-21 21:21:58 | INFO | Sent message to topic 'smoker_csv': {'timestamp': '2025-09-22T02:21:58.398761', 'temperature': 113.6}
+2025-09-21 21:22:03 | INFO | Sent message to topic 'smoker_csv': {'timestamp': '2025-09-22T02:22:03.401593', 'temperature': 114.0}
+2025-09-21 21:22:08 | INFO | Sent message to topic 'smoker_csv': {'timestamp': '2025-09-22T02:22:08.403089', 'temperature': 114.4}
+2025-09-21 21:22:13 | INFO | Sent message to topic 'smoker_csv': {'timestamp': '2025-09-22T02:22:13.405622', 'temperature': 114.8}
+2025-09-21 21:22:18 | INFO | Sent message to topic 'smoker_csv': {'timestamp': '2025-09-22T02:22:18.445548', 'temperature': 115.2}
+2025-09-21 21:22:23 | INFO | Sent message to topic 'smoker_csv': {'timestamp': '2025-09-22T02:22:23.448742', 'temperature': 115.6}
+2025-09-21 21:22:28 | INFO | Sent message to topic 'smoker_csv': {'timestamp': '2025-09-22T02:22:28.451540', 'temperature': 116.0}
+2025-09-21 21:22:33 | INFO | Sent message to topic 'smoker_csv': {'timestamp': '2025-09-22T02:22:33.455379', 'temperature': 116.4}
+2025-09-21 21:22:38 | INFO | Sent message to topic 'smoker_csv': {'timestamp': '2025-09-22T02:22:38.459087', 'temperature': 116.8}
+2025-09-21 21:22:43 | INFO | Sent message to topic 'smoker_csv': {'timestamp': '2025-09-22T02:22:43.462967', 'temperature': 117.2}
+2025-09-21 21:22:48 | INFO | Sent message to topic 'smoker_csv': {'timestamp': '2025-09-22T02:22:48.464785', 'temperature': 117.6}
+2025-09-21 21:22:53 | INFO | Sent message to topic 'smoker_csv': {'timestamp': '2025-09-22T02:22:53.466841', 'temperature': 118.0}
+2025-09-21 21:22:58 | INFO | Sent message to topic 'smoker_csv': {'timestamp': '2025-09-22T02:22:58.468282', 'temperature': 118.4}
+2025-09-21 21:23:03 | INFO | Sent message to topic 'smoker_csv': {'timestamp': '2025-09-22T02:23:03.470258', 'temperature': 118.8}
+2025-09-21 21:23:08 | INFO | Sent message to topic 'smoker_csv': {'timestamp': '2025-09-22T02:23:08.473431', 'temperature': 119.2}
+2025-09-21 21:23:13 | INFO | Sent message to topic 'smoker_csv': {'timestamp': '2025-09-22T02:23:13.475236', 'temperature': 119.6}
+2025-09-21 21:23:18 | INFO | Sent message to topic 'smoker_csv': {'timestamp': '2025-09-22T02:23:18.477952', 'temperature': 120.0}
+2025-09-21 21:23:23 | INFO | Sent message to topic 'smoker_csv': {'timestamp': '2025-09-22T02:23:23.480631', 'temperature': 120.4}
+2025-09-21 21:23:28 | INFO | Sent message to topic 'smoker_csv': {'timestamp': '2025-09-22T02:23:28.483041', 'temperature': 120.8}
+2025-09-21 21:23:33 | INFO | Sent message to topic 'smoker_csv': {'timestamp': '2025-09-22T02:23:33.486174', 'temperature': 121.2}
+2025-09-21 21:23:38 | INFO | Sent message to topic 'smoker_csv': {'timestamp': '2025-09-22T02:23:38.489566', 'temperature': 121.6}
+2025-09-21 21:23:43 | INFO | Sent message to topic 'smoker_csv': {'timestamp': '2025-09-22T02:23:43.491810', 'temperature': 122.0}
+2025-09-21 21:23:48 | INFO | Sent message to topic 'smoker_csv': {'timestamp': '2025-09-22T02:23:48.494846', 'temperature': 122.4}
+2025-09-21 21:23:53 | INFO | Sent message to topic 'smoker_csv': {'timestamp': '2025-09-22T02:23:53.498197', 'temperature': 122.8}
+2025-09-21 21:23:58 | INFO | Sent message to topic 'smoker_csv': {'timestamp': '2025-09-22T02:23:58.500831', 'temperature': 123.2}
+2025-09-21 21:24:03 | INFO | Sent message to topic 'smoker_csv': {'timestamp': '2025-09-22T02:24:03.503293', 'temperature': 123.6}
+2025-09-21 21:24:08 | INFO | Sent message to topic 'smoker_csv': {'timestamp': '2025-09-22T02:24:08.505144', 'temperature': 124.0}
+2025-09-21 21:24:13 | INFO | Sent message to topic 'smoker_csv': {'timestamp': '2025-09-22T02:24:13.506726', 'temperature': 124.4}
+2025-09-21 21:24:18 | INFO | Sent message to topic 'smoker_csv': {'timestamp': '2025-09-22T02:24:18.508022', 'temperature': 124.8}
+2025-09-21 21:24:23 | INFO | Sent message to topic 'smoker_csv': {'timestamp': '2025-09-22T02:24:23.511073', 'temperature': 125.2}
+2025-09-21 21:24:28 | INFO | Sent message to topic 'smoker_csv': {'timestamp': '2025-09-22T02:24:28.514782', 'temperature': 125.6}
+2025-09-21 21:24:33 | INFO | Sent message to topic 'smoker_csv': {'timestamp': '2025-09-22T02:24:33.516605', 'temperature': 126.0}
+2025-09-21 21:24:38 | INFO | Sent message to topic 'smoker_csv': {'timestamp': '2025-09-22T02:24:38.518090', 'temperature': 126.4}
+2025-09-21 21:24:43 | INFO | Sent message to topic 'smoker_csv': {'timestamp': '2025-09-22T02:24:43.519433', 'temperature': 126.8}
+2025-09-21 21:24:48 | INFO | Sent message to topic 'smoker_csv': {'timestamp': '2025-09-22T02:24:48.521591', 'temperature': 127.2}
+2025-09-21 21:24:53 | INFO | Sent message to topic 'smoker_csv': {'timestamp': '2025-09-22T02:24:53.525227', 'temperature': 127.6}
+2025-09-21 21:24:58 | INFO | Sent message to topic 'smoker_csv': {'timestamp': '2025-09-22T02:24:58.527272', 'temperature': 128.0}
+2025-09-21 21:25:03 | INFO | Sent message to topic 'smoker_csv': {'timestamp': '2025-09-22T02:25:03.529360', 'temperature': 128.4}
+2025-09-21 21:25:08 | INFO | Sent message to topic 'smoker_csv': {'timestamp': '2025-09-22T02:25:08.531479', 'temperature': 128.8}
+2025-09-21 21:25:13 | INFO | Sent message to topic 'smoker_csv': {'timestamp': '2025-09-22T02:25:13.533379', 'temperature': 129.2}
+2025-09-21 21:25:18 | INFO | Sent message to topic 'smoker_csv': {'timestamp': '2025-09-22T02:25:18.534767', 'temperature': 129.6}
+2025-09-21 21:25:23 | INFO | Sent message to topic 'smoker_csv': {'timestamp': '2025-09-22T02:25:23.535832', 'temperature': 130.0}
+2025-09-21 21:25:28 | INFO | Sent message to topic 'smoker_csv': {'timestamp': '2025-09-22T02:25:28.537685', 'temperature': 130.4}
+2025-09-21 21:25:33 | INFO | Sent message to topic 'smoker_csv': {'timestamp': '2025-09-22T02:25:33.539497', 'temperature': 130.8}
+2025-09-21 21:25:38 | INFO | Sent message to topic 'smoker_csv': {'timestamp': '2025-09-22T02:25:38.540668', 'temperature': 131.2}
+2025-09-21 21:25:43 | INFO | Sent message to topic 'smoker_csv': {'timestamp': '2025-09-22T02:25:43.542143', 'temperature': 131.6}
+2025-09-21 21:25:48 | INFO | Sent message to topic 'smoker_csv': {'timestamp': '2025-09-22T02:25:48.544340', 'temperature': 132.0}
+2025-09-21 21:25:53 | INFO | Sent message to topic 'smoker_csv': {'timestamp': '2025-09-22T02:25:53.545803', 'temperature': 132.4}
+2025-09-21 21:25:58 | INFO | Sent message to topic 'smoker_csv': {'timestamp': '2025-09-22T02:25:58.547833', 'temperature': 132.8}
+2025-09-21 21:26:03 | INFO | Sent message to topic 'smoker_csv': {'timestamp': '2025-09-22T02:26:03.549538', 'temperature': 133.2}
